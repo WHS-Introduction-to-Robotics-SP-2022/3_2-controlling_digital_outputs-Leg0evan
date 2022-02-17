@@ -11,33 +11,41 @@ This video illustrated what we are going for: https://www.youtube.com/watch?v=1T
 void setup()
 {
     // set up output pins
-    pinMode( , OUTPUT);
-    pinMode(8, );
+    pinMode(7 , OUTPUT);
+    pinMode(8, OUTPUT);
     
     // blink green LED on and off twice
-        digitalWrite(, HIGH);
-        delay();
-        digitalWrite(, LOW);
-        delay();
+        digitalWrite(8, HIGH);
+        delay(200);
+        digitalWrite(8, LOW);
+        delay(200);
+        digitalWrite(8, HIGH);
+        delay(200);
+        digitalWrite(8, LOW);
     
     // wait one second
-    delay ();
+    delay (1000);
     
     // blink blue LED on and off twice
-        digitalWrite(, HIGH);
-        delay();
-        digitalWrite(, LOW);
-        delay(); 
+        digitalWrite(7, HIGH);
+        delay(200);
+        digitalWrite(7, LOW);
+        delay(200);
+        digitalWrite(7, HIGH);
+        delay(200);
+        digitalWrite(7, LOW);
     
     // wait three seconds
-    delay ();
+    delay (3000);
 }
 
 void loop()
 {
     // blink both LEDs on and off alternatively
-
+    digitalWrite(8, HIGH);
+    digitalWrite(7, LOW);
     delay(650);
-
+    digitalWrite(8, LOW);
+    digitalWrite(7, HIGH);
     delay(650);
 }
